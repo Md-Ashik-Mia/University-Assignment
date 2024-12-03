@@ -6,7 +6,7 @@ xmlr.onload = function() {
 
 }
 
-xmlr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+xmlr.open('GET', 'https://md-ashik-mia.github.io/University-Assignment/ashik.json', true);
 xmlr.send();
 
 
@@ -14,10 +14,18 @@ xmlr.send();
 
 
 function fetchData(){
-        document.getElementById("demo").innerHTML =jdata[0].title;
-    
+        console.log(jdata[0])
 
+       var Food =jdata[0].foods.likes
+       console.log(Food)
 
+    saveItem=''
+       for(item of Food){
+        saveItem=saveItem+" "+item;
+       }
+        console.log(saveItem)
+
+        document.getElementById("demo").innerHTML=`Hello My Name is ${jdata[0].FirstName} ${jdata[0].LastName} i do like ${saveItem}`
 
 }
 
