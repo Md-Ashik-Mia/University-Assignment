@@ -1,0 +1,9 @@
+[
+    {
+      "FirstName": "MD ASHIK",
+      "LastName":"Mia",
+      "foods": {
+        "likes": ["Biriyani", "Bacchi ","Gorur KalaVuna","Noodles"]
+      }
+    }
+  ]
